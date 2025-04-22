@@ -1,11 +1,11 @@
-[ @file = "/home/max/git/simplex-garmin-watchface/source/ColorSettings.mc"; @line = 1; ]
+[ @file = "/home/max/git/simplex-garmin-watchface/source/ColorSettings.mc"; @line = 1; @symbol_usingdef<0> = [Toybox,1,6,12]; @symbol_usingdef<1> = [System,1,13,19]; ]
 using Toybox.System;
-[ @file = "/home/max/git/simplex-garmin-watchface/source/ColorSettings.mc"; @line = 2; ]
+[ @file = "/home/max/git/simplex-garmin-watchface/source/ColorSettings.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [Lang,2,14,18]; ]
 import Toybox.Lang;
-[ @file = "/home/max/git/simplex-garmin-watchface/source/ColorSettings.mc"; @line = 3; ]
+[ @file = "/home/max/git/simplex-garmin-watchface/source/ColorSettings.mc"; @line = 3; @symbol_importdef<0> = [Toybox,3,7,13]; @symbol_importdef<1> = [WatchUi,3,14,21]; ]
 import Toybox.WatchUi;
-[ @file = "/home/max/git/simplex-garmin-watchface/source/ColorSettings.mc"; @line = 5; ]
-class ColorSettingsMenu extends WatchUi.Menu2{
+[ @file = "/home/max/git/simplex-garmin-watchface/source/ColorSettings.mc"; @line = 5; @symbol_classdef = [ColorSettingsMenu,5,6,23]; @symbol_extends<0> = [WatchUi,5,32,39]; @symbol_extends<1> = [Menu2,5,40,45]; ]
+class ColorSettingsMenu extends WatchUi.Menu2 {
     [ @file = "/home/max/git/simplex-garmin-watchface/source/ColorSettings.mc"; @line = 5; ]
     <init> {
     }
@@ -13,201 +13,261 @@ class ColorSettingsMenu extends WatchUi.Menu2{
     static
     <init> {
     }
-    [ @file = "/home/max/git/simplex-garmin-watchface/source/ColorSettings.mc"; @line = 7; @position = 16; ]
+    [ @file = "/home/max/git/simplex-garmin-watchface/source/ColorSettings.mc"; @line = 7; @position = 16; @symbol_vardef = [settings_name,7,16,29]; ]
     private
     var settings_name;
-    [ @file = "/home/max/git/simplex-garmin-watchface/source/ColorSettings.mc"; @line = 9; @position = 16; ]
+    [ @file = "/home/max/git/simplex-garmin-watchface/source/ColorSettings.mc"; @line = 9; @position = 16; @symbol_vardef = [selection_index,9,16,31]; ]
     private
     var selection_index;
-    [ @file = "/home/max/git/simplex-garmin-watchface/source/ColorSettings.mc"; @line = 11; @position = 16; ]
+    [ @file = "/home/max/git/simplex-garmin-watchface/source/ColorSettings.mc"; @line = 11; @position = 16; @symbol_vardef = [menu_item_handle,11,16,32]; ]
     private
     var menu_item_handle;
-    [ @file = "/home/max/git/simplex-garmin-watchface/source/ColorSettings.mc"; @line = 13; ]
+    [ @file = "/home/max/git/simplex-garmin-watchface/source/ColorSettings.mc"; @line = 13; @symbol_functiondef = [initialize,13,13,23]; @symbol_param<0> = [title,13,24,29]; @symbol_param<1> = [name,13,31,35]; ]
     function initialize(title, name) as Void {
-_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_14_4_start:
+_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_14_4_33_4_start:
 [ "/home/max/git/simplex-garmin-watchface/source/ColorSettings.mc" 15 8 ]
+        symbol [ View %tmp.2 15 8 12 ];
         %tmp.2 = getv ? :View;
+        symbol [ initialize %tmp.3 15 13 23 ];
         %tmp.3 = getv function %tmp.2 :initialize;
         invoke %tmp.2 %tmp.3();
 [ "/home/max/git/simplex-garmin-watchface/source/ColorSettings.mc" 17 8 ]
-        %tmp.5 = lgetv %name;
-        putv self :settings_name %tmp.5;
+        %tmp.4 = lgetv %name;
+        symbol [ name %tmp.4 17 24 28 ];
+        symbol [ settings_name ? 17 8 21 ];
+        putv self :settings_name %tmp.4;
 [ "/home/max/git/simplex-garmin-watchface/source/ColorSettings.mc" 19 8 ]
-        %tmp.6 = null;
-        putv self :menu_item_handle %tmp.6;
+        %tmp.5 = null;
+        symbol [ menu_item_handle ? 19 8 24 ];
+        putv self :menu_item_handle %tmp.5;
 [ "/home/max/git/simplex-garmin-watchface/source/ColorSettings.mc" 21 8 ]
-        %tmp.8 = getv ? :Menu2;
-        %tmp.9 = getv function %tmp.8 :initialize;
-        %tmp.10 = newd 1;
-        %tmp.12 = const :title;
-        %tmp.14 = lgetv %title;
-        %tmp.15 = dup %tmp.10;
-        %tmp.16 = aputv %tmp.15 %tmp.12 %tmp.14;
-        invoke %tmp.8 %tmp.9(%tmp.16);
+        symbol [ Menu2 %tmp.7 21 8 13 ];
+        %tmp.7 = getv ? :Menu2;
+        symbol [ initialize %tmp.8 21 14 24 ];
+        %tmp.8 = getv function %tmp.7 :initialize;
+        %tmp.9 = newd 1;
+        %tmp.11 = const :title;
+        symbol [ title %tmp.11 21 27 32 const ];
+        %tmp.12 = lgetv %title;
+        symbol [ title %tmp.12 21 34 39 ];
+        %tmp.13 = dup %tmp.9;
+        %tmp.14 = aputv %tmp.13 %tmp.11 %tmp.12;
+        invoke %tmp.7 %tmp.8(%tmp.14);
 [ "/home/max/git/simplex-garmin-watchface/source/ColorSettings.mc" 24 8 ]
-        [ "_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_14_4_start" "_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_14_4_stop" ]
+        [ "_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_14_4_33_4_start" "_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_14_4_33_4_stop" ]
         %custom_color.1 = local;
-        %tmp.17 = self;
-        %tmp.18 = getv function %tmp.17 :loadColorSettings;
-        %tmp.20 = getv ? :settings_name;
-        %tmp.21 = invoke %tmp.17 %tmp.18(%tmp.20);
-        lputv %custom_color.1 %tmp.21;
+        symbol [ custom_color %custom_color.1 24 12 24 ];
+        %tmp.15 = self;
+        symbol [ loadColorSettings %tmp.16 24 27 44 ];
+        %tmp.16 = getv function %tmp.15 :loadColorSettings;
+        symbol [ settings_name %tmp.18 24 45 58 ];
+        %tmp.18 = getv ? :settings_name;
+        %tmp.19 = invoke %tmp.15 %tmp.16(%tmp.18);
+        lputv %custom_color.1 %tmp.19;
+        symbol [ custom_color %custom_color.1 24 12 24 ];
 [ "/home/max/git/simplex-garmin-watchface/source/ColorSettings.mc" 26 8 ]
-        %tmp.23 = getv ? :Menu2;
-        %tmp.24 = getv function %tmp.23 :addItem;
-        %tmp.27 = getm $.Toybox.WatchUi;
-        %tmp.28 = getv function ? %tmp.27 :IconMenuItem;
-        %tmp.29 = "Customize";
-        %tmp.30 = self;
-        %tmp.31 = getv function %tmp.30 :colorName;
-        %tmp.33 = lgetv %custom_color.1;
-        %tmp.34 = invoke %tmp.30 %tmp.31(%tmp.33);
-        %tmp.35 = "CustomColor";
-        %tmp.36 = self;
-        %tmp.37 = getv function %tmp.36 :generateColorIcon;
-        %tmp.39 = lgetv %custom_color.1;
-        %tmp.40 = invoke %tmp.36 %tmp.37(%tmp.39);
-        %tmp.41 = newd 1;
-        %tmp.43 = const :alignment;
-        %tmp.44 = getm $.Toybox.WatchUi;
-        %tmp.45 = getv %tmp.44 :MenuItem;
-        %tmp.46 = getv %tmp.45 :MENU_ITEM_LABEL_ALIGN_LEFT;
-        %tmp.47 = dup %tmp.41;
-        %tmp.48 = aputv %tmp.47 %tmp.43 %tmp.46;
-        %tmp.25 = newc %tmp.28 (%tmp.29, %tmp.34, %tmp.35, %tmp.40, %tmp.48);
-        invoke %tmp.23 %tmp.24(%tmp.25);
+        symbol [ Menu2 %tmp.21 26 8 13 ];
+        %tmp.21 = getv ? :Menu2;
+        symbol [ addItem %tmp.22 26 14 21 ];
+        %tmp.22 = getv function %tmp.21 :addItem;
+        symbol [ WatchUi %tmp.25 26 26 33 ];
+        %tmp.25 = getm $.Toybox.WatchUi;
+        symbol [ IconMenuItem %tmp.26 26 34 46 ];
+        %tmp.26 = getv function ? %tmp.25 :IconMenuItem;
+        %tmp.27 = "Customize";
+        %tmp.28 = self;
+        symbol [ colorName %tmp.29 26 60 69 ];
+        %tmp.29 = getv function %tmp.28 :colorName;
+        %tmp.30 = lgetv %custom_color.1;
+        symbol [ custom_color %tmp.30 26 70 82 ];
+        %tmp.31 = invoke %tmp.28 %tmp.29(%tmp.30);
+        %tmp.32 = "CustomColor";
+        %tmp.33 = self;
+        symbol [ generateColorIcon %tmp.34 26 100 117 ];
+        %tmp.34 = getv function %tmp.33 :generateColorIcon;
+        %tmp.35 = lgetv %custom_color.1;
+        symbol [ custom_color %tmp.35 26 118 130 ];
+        %tmp.36 = invoke %tmp.33 %tmp.34(%tmp.35);
+        %tmp.37 = newd 1;
+        %tmp.39 = const :alignment;
+        symbol [ alignment %tmp.39 26 135 144 const ];
+        symbol [ WatchUi %tmp.40 26 147 154 ];
+        %tmp.40 = getm $.Toybox.WatchUi;
+        symbol [ MenuItem %tmp.41 26 155 163 ];
+        %tmp.41 = getv %tmp.40 :MenuItem;
+        symbol [ MENU_ITEM_LABEL_ALIGN_LEFT %tmp.42 26 164 190 ];
+        %tmp.42 = getv %tmp.41 :MENU_ITEM_LABEL_ALIGN_LEFT;
+        %tmp.43 = dup %tmp.37;
+        %tmp.44 = aputv %tmp.43 %tmp.39 %tmp.42;
+        %tmp.23 = newc %tmp.26 (%tmp.27, %tmp.31, %tmp.32, %tmp.36, %tmp.44);
+        invoke %tmp.21 %tmp.22(%tmp.23);
 [ "/home/max/git/simplex-garmin-watchface/source/ColorSettings.mc" 28 8 ]
-        for @_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_28_8_for_test @_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_28_8_for_incr @_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_28_8_for_end;
-_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_28_8_for_init:
-        [ "_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_28_8_for_begin" "_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_28_8_for_end" ]
+        for @_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_28_8_31_8_for_test @_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_28_8_31_8_for_incr @_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_28_8_31_8_for_end;
+_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_28_8_31_8_for_init:
+        [ "_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_28_8_31_8_for_begin" "_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_28_8_31_8_for_end" ]
         %i.2 = local;
-        %tmp.49 = 0;
-        lputv %i.2 %tmp.49;
-_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_28_8_for_test:
-        %tmp.51 = lgetv %i.2;
-        %tmp.53 = getv ? :colors;
-        %tmp.54 = getv function %tmp.53 :size;
-        %tmp.55 = invoke %tmp.53 %tmp.54();
-        %tmp.56 = lt %tmp.51 %tmp.55;
-        bf %tmp.56 @_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_28_8_for_end;
-_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_28_8_for_begin:
-_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_29_8_start:
+        symbol [ i %i.2 28 16 17 ];
+        %tmp.45 = 0;
+        lputv %i.2 %tmp.45;
+        symbol [ i %i.2 28 16 17 ];
+_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_28_8_31_8_for_test:
+        %tmp.46 = lgetv %i.2;
+        symbol [ i %tmp.46 28 22 23 ];
+        symbol [ colors %tmp.48 28 26 32 ];
+        %tmp.48 = getv ? :colors;
+        symbol [ size %tmp.49 28 33 37 ];
+        %tmp.49 = getv function %tmp.48 :size;
+        %tmp.50 = invoke %tmp.48 %tmp.49();
+        %tmp.51 = lt %tmp.46 %tmp.50;
+        bf %tmp.51 @_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_28_8_31_8_for_end;
+_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_28_8_31_8_for_begin:
+_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_29_8_31_8_start:
 [ "/home/max/git/simplex-garmin-watchface/source/ColorSettings.mc" 30 12 ]
-        %tmp.58 = getv ? :Menu2;
-        %tmp.59 = getv function %tmp.58 :addItem;
-        %tmp.62 = getm $.Toybox.WatchUi;
-        %tmp.63 = getv function ? %tmp.62 :IconMenuItem;
-        %tmp.64 = self;
-        %tmp.65 = getv function %tmp.64 :colorName;
-        %tmp.67 = getv ? :colors;
+        symbol [ Menu2 %tmp.53 30 12 17 ];
+        %tmp.53 = getv ? :Menu2;
+        symbol [ addItem %tmp.54 30 18 25 ];
+        %tmp.54 = getv function %tmp.53 :addItem;
+        symbol [ WatchUi %tmp.57 30 30 37 ];
+        %tmp.57 = getm $.Toybox.WatchUi;
+        symbol [ IconMenuItem %tmp.58 30 38 50 ];
+        %tmp.58 = getv function ? %tmp.57 :IconMenuItem;
+        %tmp.59 = self;
+        symbol [ colorName %tmp.60 30 51 60 ];
+        %tmp.60 = getv function %tmp.59 :colorName;
+        symbol [ colors %tmp.62 30 61 67 ];
+        %tmp.62 = getv ? :colors;
+        %tmp.63 = lgetv %i.2;
+        symbol [ i %tmp.63 30 68 69 ];
+        %tmp.64 = agetv %tmp.62 %tmp.63;
+        %tmp.65 = invoke %tmp.59 %tmp.60(%tmp.64);
+        %tmp.66 = null;
+        symbol [ colors %tmp.68 30 79 85 ];
+        %tmp.68 = getv ? :colors;
         %tmp.69 = lgetv %i.2;
-        %tmp.70 = agetv %tmp.67 %tmp.69;
-        %tmp.71 = invoke %tmp.64 %tmp.65(%tmp.70);
-        %tmp.72 = null;
+        symbol [ i %tmp.69 30 86 87 ];
+        %tmp.70 = agetv %tmp.68 %tmp.69;
+        %tmp.71 = self;
+        symbol [ generateColorIcon %tmp.72 30 90 107 ];
+        %tmp.72 = getv function %tmp.71 :generateColorIcon;
+        symbol [ colors %tmp.74 30 108 114 ];
         %tmp.74 = getv ? :colors;
-        %tmp.76 = lgetv %i.2;
-        %tmp.77 = agetv %tmp.74 %tmp.76;
-        %tmp.78 = self;
-        %tmp.79 = getv function %tmp.78 :generateColorIcon;
-        %tmp.81 = getv ? :colors;
-        %tmp.83 = lgetv %i.2;
-        %tmp.84 = agetv %tmp.81 %tmp.83;
-        %tmp.85 = invoke %tmp.78 %tmp.79(%tmp.84);
-        %tmp.86 = newd 1;
-        %tmp.88 = const :alignment;
-        %tmp.89 = getm $.Toybox.WatchUi;
-        %tmp.90 = getv %tmp.89 :MenuItem;
-        %tmp.91 = getv %tmp.90 :MENU_ITEM_LABEL_ALIGN_LEFT;
-        %tmp.92 = dup %tmp.86;
-        %tmp.93 = aputv %tmp.92 %tmp.88 %tmp.91;
-        %tmp.60 = newc %tmp.63 (%tmp.71, %tmp.72, %tmp.77, %tmp.85, %tmp.93);
-        invoke %tmp.58 %tmp.59(%tmp.60);
-_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_29_8_stop:
-_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_28_8_for_incr:
+        %tmp.75 = lgetv %i.2;
+        symbol [ i %tmp.75 30 115 116 ];
+        %tmp.76 = agetv %tmp.74 %tmp.75;
+        %tmp.77 = invoke %tmp.71 %tmp.72(%tmp.76);
+        %tmp.78 = newd 1;
+        %tmp.80 = const :alignment;
+        symbol [ alignment %tmp.80 30 122 131 const ];
+        symbol [ WatchUi %tmp.81 30 134 141 ];
+        %tmp.81 = getm $.Toybox.WatchUi;
+        symbol [ MenuItem %tmp.82 30 142 150 ];
+        %tmp.82 = getv %tmp.81 :MenuItem;
+        symbol [ MENU_ITEM_LABEL_ALIGN_LEFT %tmp.83 30 151 177 ];
+        %tmp.83 = getv %tmp.82 :MENU_ITEM_LABEL_ALIGN_LEFT;
+        %tmp.84 = dup %tmp.78;
+        %tmp.85 = aputv %tmp.84 %tmp.80 %tmp.83;
+        %tmp.55 = newc %tmp.58 (%tmp.65, %tmp.66, %tmp.70, %tmp.77, %tmp.85);
+        invoke %tmp.53 %tmp.54(%tmp.55);
+_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_29_8_31_8_stop:
+_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_28_8_31_8_for_incr:
 [ "/home/max/git/simplex-garmin-watchface/source/ColorSettings.mc" 28 ]
-        %tmp.96 = lgetv %i.2;
-        %tmp.97 = add %tmp.96 1;
-        lputv %i.2 %tmp.97;
-        goto @_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_28_8_for_test;
-_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_28_8_for_end:
-_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_14_4_stop:
+        %tmp.88 = lgetv %i.2;
+        symbol [ i %tmp.88 28 41 42 ];
+        %tmp.89 = add %tmp.88 1;
+        lputv %i.2 %tmp.89;
+        symbol [ i %i.2 28 41 42 ];
+        goto @_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_28_8_31_8_for_test;
+_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_28_8_31_8_for_end:
+_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_14_4_33_4_stop:
     }
-    [ @file = "/home/max/git/simplex-garmin-watchface/source/ColorSettings.mc"; @line = 36; ]
+    [ @file = "/home/max/git/simplex-garmin-watchface/source/ColorSettings.mc"; @line = 36; @symbol_functiondef = [onLayout,36,13,21]; @symbol_param<0> = [dc,36,22,24]; ]
     function onLayout(dc) {
     }
-    [ @file = "/home/max/git/simplex-garmin-watchface/source/ColorSettings.mc"; @line = 42; ]
+    [ @file = "/home/max/git/simplex-garmin-watchface/source/ColorSettings.mc"; @line = 42; @symbol_functiondef = [onShow,42,13,19]; ]
     function onShow() {
     }
-    [ @file = "/home/max/git/simplex-garmin-watchface/source/ColorSettings.mc"; @line = 47; ]
+    [ @file = "/home/max/git/simplex-garmin-watchface/source/ColorSettings.mc"; @line = 47; @symbol_functiondef = [onUpdate,47,13,21]; @symbol_param<0> = [dc,47,22,24]; ]
     function onUpdate(dc) {
-_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_48_4_start:
+_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_48_4_52_4_start:
 [ "/home/max/git/simplex-garmin-watchface/source/ColorSettings.mc" 49 8 ]
+        symbol [ View %tmp.2 49 8 12 ];
         %tmp.2 = getv ? :View;
+        symbol [ onUpdate %tmp.3 49 13 21 ];
         %tmp.3 = getv function %tmp.2 :onUpdate;
-        %tmp.5 = lgetv %dc;
-        invoke %tmp.2 %tmp.3(%tmp.5);
-_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_48_4_stop:
+        %tmp.4 = lgetv %dc;
+        symbol [ dc %tmp.4 49 22 24 ];
+        invoke %tmp.2 %tmp.3(%tmp.4);
+_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_48_4_52_4_stop:
     }
-    [ @file = "/home/max/git/simplex-garmin-watchface/source/ColorSettings.mc"; @line = 55; ]
+    [ @file = "/home/max/git/simplex-garmin-watchface/source/ColorSettings.mc"; @line = 55; @symbol_functiondef = [onHide,55,13,19]; ]
     function onHide() {
     }
-    [ @file = "/home/max/git/simplex-garmin-watchface/source/ColorSettings.mc"; @line = 60; ]
+    [ @file = "/home/max/git/simplex-garmin-watchface/source/ColorSettings.mc"; @line = 60; @symbol_functiondef = [setSettingsName,60,20,35]; @symbol_param<0> = [name,60,36,40]; ]
     public
     function setSettingsName(name) {
-_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_61_4_start:
+_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_61_4_63_4_start:
 [ "/home/max/git/simplex-garmin-watchface/source/ColorSettings.mc" 62 8 ]
-        %tmp.2 = lgetv %name;
-        putv self :settings_name %tmp.2;
-_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_61_4_stop:
+        %tmp.1 = lgetv %name;
+        symbol [ name %tmp.1 62 24 28 ];
+        symbol [ settings_name ? 62 8 21 ];
+        putv self :settings_name %tmp.1;
+_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_61_4_63_4_stop:
     }
-    [ @file = "/home/max/git/simplex-garmin-watchface/source/ColorSettings.mc"; @line = 65; ]
+    [ @file = "/home/max/git/simplex-garmin-watchface/source/ColorSettings.mc"; @line = 65; @symbol_functiondef = [getSettingsName,65,20,35]; ]
     public
     function getSettingsName() {
-_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_66_4_start:
+_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_66_4_68_4_start:
 [ "/home/max/git/simplex-garmin-watchface/source/ColorSettings.mc" 67 8 ]
+        symbol [ settings_name %tmp.2 67 15 28 ];
         %tmp.2 = getv ? :settings_name;
         ret %tmp.2;
-_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_66_4_stop:
+_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_66_4_68_4_stop:
     }
-    [ @file = "/home/max/git/simplex-garmin-watchface/source/ColorSettings.mc"; @line = 70; ]
+    [ @file = "/home/max/git/simplex-garmin-watchface/source/ColorSettings.mc"; @line = 70; @symbol_functiondef = [setSelectionIndex,70,20,37]; @symbol_param<0> = [index,70,38,43]; ]
     public
     function setSelectionIndex(index) {
-_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_71_4_start:
+_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_71_4_73_4_start:
 [ "/home/max/git/simplex-garmin-watchface/source/ColorSettings.mc" 72 8 ]
-        %tmp.2 = lgetv %index;
-        putv self :selection_index %tmp.2;
-_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_71_4_stop:
+        %tmp.1 = lgetv %index;
+        symbol [ index %tmp.1 72 26 31 ];
+        symbol [ selection_index ? 72 8 23 ];
+        putv self :selection_index %tmp.1;
+_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_71_4_73_4_stop:
     }
-    [ @file = "/home/max/git/simplex-garmin-watchface/source/ColorSettings.mc"; @line = 75; ]
+    [ @file = "/home/max/git/simplex-garmin-watchface/source/ColorSettings.mc"; @line = 75; @symbol_functiondef = [getSelectionIndex,75,20,37]; ]
     public
     function getSelectionIndex() {
-_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_76_4_start:
+_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_76_4_78_4_start:
 [ "/home/max/git/simplex-garmin-watchface/source/ColorSettings.mc" 77 8 ]
+        symbol [ selection_index %tmp.2 77 15 30 ];
         %tmp.2 = getv ? :selection_index;
         ret %tmp.2;
-_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_76_4_stop:
+_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_76_4_78_4_stop:
     }
-    [ @file = "/home/max/git/simplex-garmin-watchface/source/ColorSettings.mc"; @line = 80; ]
+    [ @file = "/home/max/git/simplex-garmin-watchface/source/ColorSettings.mc"; @line = 80; @symbol_functiondef = [setMenuItemHandle,80,20,37]; @symbol_param<0> = [handle,80,38,44]; ]
     public
     function setMenuItemHandle(handle) {
-_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_81_4_start:
+_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_81_4_83_4_start:
 [ "/home/max/git/simplex-garmin-watchface/source/ColorSettings.mc" 82 8 ]
-        %tmp.2 = lgetv %handle;
-        putv self :menu_item_handle %tmp.2;
-_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_81_4_stop:
+        %tmp.1 = lgetv %handle;
+        symbol [ handle %tmp.1 82 28 34 ];
+        symbol [ menu_item_handle ? 82 8 24 ];
+        putv self :menu_item_handle %tmp.1;
+_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_81_4_83_4_stop:
     }
-    [ @file = "/home/max/git/simplex-garmin-watchface/source/ColorSettings.mc"; @line = 85; ]
+    [ @file = "/home/max/git/simplex-garmin-watchface/source/ColorSettings.mc"; @line = 85; @symbol_functiondef = [getMenuItemHandle,85,21,38]; ]
     public
     function getMenuItemHandle() {
-_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_86_4_start:
+_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_86_4_88_4_start:
 [ "/home/max/git/simplex-garmin-watchface/source/ColorSettings.mc" 87 8 ]
+        symbol [ menu_item_handle %tmp.2 87 15 31 ];
         %tmp.2 = getv ? :menu_item_handle;
         ret %tmp.2;
-_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_86_4_stop:
+_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_86_4_88_4_stop:
     }
 }
-[ @file = "/home/max/git/simplex-garmin-watchface/source/ColorSettings.mc"; @line = 91; ]
-class ColorSettingsMenuDelegate extends WatchUi.Menu2InputDelegate{
+[ @file = "/home/max/git/simplex-garmin-watchface/source/ColorSettings.mc"; @line = 91; @symbol_classdef = [ColorSettingsMenuDelegate,91,6,31]; @symbol_extends<0> = [WatchUi,91,40,47]; @symbol_extends<1> = [Menu2InputDelegate,91,48,66]; ]
+class ColorSettingsMenuDelegate extends WatchUi.Menu2InputDelegate {
     [ @file = "/home/max/git/simplex-garmin-watchface/source/ColorSettings.mc"; @line = 91; ]
     <init> {
     }
@@ -215,157 +275,220 @@ class ColorSettingsMenuDelegate extends WatchUi.Menu2InputDelegate{
     static
     <init> {
     }
-    [ @file = "/home/max/git/simplex-garmin-watchface/source/ColorSettings.mc"; @line = 93; @position = 16; ]
+    [ @file = "/home/max/git/simplex-garmin-watchface/source/ColorSettings.mc"; @line = 93; @position = 16; @symbol_vardef = [color_settings_menu,93,16,35]; ]
     private
     var color_settings_menu;
     //! Constructor
-    [ @file = "/home/max/git/simplex-garmin-watchface/source/ColorSettings.mc"; @line = 96; ]
+    [ @file = "/home/max/git/simplex-garmin-watchface/source/ColorSettings.mc"; @line = 96; @symbol_functiondef = [initialize,96,20,30]; ]
     public
     function initialize() as Void {
-_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_97_4_start:
+_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_97_4_99_4_start:
 [ "/home/max/git/simplex-garmin-watchface/source/ColorSettings.mc" 98 8 ]
+        symbol [ Menu2InputDelegate %tmp.2 98 8 26 ];
         %tmp.2 = getv ? :Menu2InputDelegate;
+        symbol [ initialize %tmp.3 98 27 37 ];
         %tmp.3 = getv function %tmp.2 :initialize;
         invoke %tmp.2 %tmp.3();
-_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_97_4_stop:
+_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_97_4_99_4_stop:
     }
-    [ @file = "/home/max/git/simplex-garmin-watchface/source/ColorSettings.mc"; @line = 101; ]
+    [ @file = "/home/max/git/simplex-garmin-watchface/source/ColorSettings.mc"; @line = 101; @symbol_functiondef = [onSelect,101,20,28]; @symbol_param<0> = [menuItem,101,29,37]; @symbol_param<0>_type<0> = [MenuItem,101,41,49]; ]
     public
     function onSelect(menuItem as MenuItem) as Void {
-_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_102_4_start:
+_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_102_4_144_4_start:
 [ "/home/max/git/simplex-garmin-watchface/source/ColorSettings.mc" 104 8 ]
-_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_104_8_if_stmt:
+_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_104_8_141_8_if_stmt:
         %tmp.1 = lgetv %menuItem;
+        symbol [ menuItem %tmp.1 104 12 20 ];
+        symbol [ getId %tmp.2 104 21 26 ];
         %tmp.2 = getv function %tmp.1 :getId;
         %tmp.3 = invoke %tmp.1 %tmp.2();
         %tmp.4 = as %tmp.3 String;
+        symbol [ String %tmp.4 104 32 38 ];
+        symbol [ equals %tmp.5 104 40 46 ];
         %tmp.5 = getv function %tmp.4 :equals;
         %tmp.6 = "CustomColor";
         %tmp.7 = invoke %tmp.4 %tmp.5(%tmp.6);
-        bf %tmp.7 @_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_104_8_if_false;
-_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_104_8_if_true:
-_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_105_8_start:
+        bf %tmp.7 @_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_104_8_141_8_if_else_false;
+_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_104_8_141_8_if_true:
+_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_105_8_121_8_start:
 [ "/home/max/git/simplex-garmin-watchface/source/ColorSettings.mc" 106 12 ]
-        [ "_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_105_8_start" "_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_105_8_stop" ]
+        [ "_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_105_8_121_8_start" "_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_105_8_121_8_stop" ]
         %color_picker.1 = local;
+        symbol [ color_picker %color_picker.1 106 16 28 ];
 [ "/home/max/git/simplex-garmin-watchface/source/ColorSettings.mc" 108 12 ]
+        symbol [ ColorPickerView %tmp.11 108 31 46 ];
         %tmp.11 = getv ? :ColorPickerView;
         %tmp.8 = newc %tmp.11 ();
         lputv %color_picker.1 %tmp.8;
+        symbol [ color_picker %color_picker.1 108 12 24 ];
 [ "/home/max/git/simplex-garmin-watchface/source/ColorSettings.mc" 110 12 ]
         %tmp.12 = lgetv %color_picker.1;
+        symbol [ color_picker %tmp.12 110 12 24 ];
+        symbol [ setSettingsName %tmp.13 110 25 40 ];
         %tmp.13 = getv function %tmp.12 :setSettingsName;
+        symbol [ color_settings_menu %tmp.15 110 41 60 ];
         %tmp.15 = getv ? :color_settings_menu;
+        symbol [ getSettingsName %tmp.16 110 61 76 ];
         %tmp.16 = getv function %tmp.15 :getSettingsName;
         %tmp.17 = invoke %tmp.15 %tmp.16();
         invoke %tmp.12 %tmp.13(%tmp.17);
 [ "/home/max/git/simplex-garmin-watchface/source/ColorSettings.mc" 111 12 ]
         %tmp.18 = lgetv %color_picker.1;
+        symbol [ color_picker %tmp.18 111 12 24 ];
+        symbol [ setMenuItemHandle %tmp.19 111 25 42 ];
         %tmp.19 = getv function %tmp.18 :setMenuItemHandle;
+        symbol [ color_settings_menu %tmp.21 111 43 62 ];
         %tmp.21 = getv ? :color_settings_menu;
+        symbol [ getMenuItemHandle %tmp.22 111 63 80 ];
         %tmp.22 = getv function %tmp.21 :getMenuItemHandle;
         %tmp.23 = invoke %tmp.21 %tmp.22();
         invoke %tmp.18 %tmp.19(%tmp.23);
 [ "/home/max/git/simplex-garmin-watchface/source/ColorSettings.mc" 112 12 ]
         %tmp.24 = lgetv %color_picker.1;
+        symbol [ color_picker %tmp.24 112 12 24 ];
+        symbol [ setColorMenuItemHandle %tmp.25 112 25 47 ];
         %tmp.25 = getv function %tmp.24 :setColorMenuItemHandle;
-        %tmp.27 = lgetv %menuItem;
-        invoke %tmp.24 %tmp.25(%tmp.27);
+        %tmp.26 = lgetv %menuItem;
+        symbol [ menuItem %tmp.26 112 48 56 ];
+        invoke %tmp.24 %tmp.25(%tmp.26);
 [ "/home/max/git/simplex-garmin-watchface/source/ColorSettings.mc" 115 12 ]
-        [ "_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_105_8_start" "_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_105_8_stop" ]
+        [ "_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_105_8_121_8_start" "_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_105_8_121_8_stop" ]
         %delegate.2 = local;
-        %tmp.31 = getv ? :ColorPickerViewDelegate;
-        %tmp.28 = newc %tmp.31 ();
-        lputv %delegate.2 %tmp.28;
+        symbol [ delegate %delegate.2 115 16 24 ];
+        symbol [ ColorPickerViewDelegate %tmp.30 115 31 54 ];
+        %tmp.30 = getv ? :ColorPickerViewDelegate;
+        %tmp.27 = newc %tmp.30 ();
+        lputv %delegate.2 %tmp.27;
+        symbol [ delegate %delegate.2 115 16 24 ];
 [ "/home/max/git/simplex-garmin-watchface/source/ColorSettings.mc" 117 12 ]
-        %tmp.32 = lgetv %delegate.2;
-        %tmp.33 = getv function %tmp.32 :setView;
-        %tmp.35 = lgetv %color_picker.1;
-        invoke %tmp.32 %tmp.33(%tmp.35);
+        %tmp.31 = lgetv %delegate.2;
+        symbol [ delegate %tmp.31 117 12 20 ];
+        symbol [ setView %tmp.32 117 21 28 ];
+        %tmp.32 = getv function %tmp.31 :setView;
+        %tmp.33 = lgetv %color_picker.1;
+        symbol [ color_picker %tmp.33 117 29 41 ];
+        invoke %tmp.31 %tmp.32(%tmp.33);
 [ "/home/max/git/simplex-garmin-watchface/source/ColorSettings.mc" 119 12 ]
-        %tmp.36 = getm $.Toybox.WatchUi;
-        %tmp.37 = getv function %tmp.36 :pushView;
-        %tmp.39 = lgetv %color_picker.1;
-        %tmp.41 = lgetv %delegate.2;
-        %tmp.42 = getm $.Toybox.WatchUi;
-        %tmp.43 = getv %tmp.42 :SLIDE_LEFT;
-        invoke %tmp.36 %tmp.37(%tmp.39, %tmp.41, %tmp.43);
-_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_105_8_stop:
-        goto @_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_104_8_if_end;
-_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_104_8_if_false:
-_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_124_8_start:
+        symbol [ WatchUi %tmp.34 119 12 19 ];
+        %tmp.34 = getm $.Toybox.WatchUi;
+        symbol [ pushView %tmp.35 119 20 28 ];
+        %tmp.35 = getv function %tmp.34 :pushView;
+        %tmp.36 = lgetv %color_picker.1;
+        symbol [ color_picker %tmp.36 119 29 41 ];
+        %tmp.37 = lgetv %delegate.2;
+        symbol [ delegate %tmp.37 119 43 51 ];
+        symbol [ WatchUi %tmp.38 119 53 60 ];
+        %tmp.38 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_LEFT %tmp.39 119 61 71 ];
+        %tmp.39 = getv %tmp.38 :SLIDE_LEFT;
+        invoke %tmp.34 %tmp.35(%tmp.36, %tmp.37, %tmp.39);
+_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_105_8_121_8_stop:
+        goto @_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_104_8_141_8_if_end;
+_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_104_8_141_8_if_else_false:
+_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_124_8_141_8_start:
 [ "/home/max/git/simplex-garmin-watchface/source/ColorSettings.mc" 125 12 ]
-        [ "_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_124_8_start" "_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_124_8_stop" ]
+        [ "_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_124_8_141_8_start" "_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_124_8_141_8_stop" ]
         %color_id.3 = local;
-        %tmp.44 = lgetv %menuItem;
-        %tmp.45 = getv function %tmp.44 :getId;
-        %tmp.46 = invoke %tmp.44 %tmp.45();
-        %tmp.47 = as %tmp.46 Number;
-        lputv %color_id.3 %tmp.47;
+        symbol [ color_id %color_id.3 125 16 24 ];
+        %tmp.40 = lgetv %menuItem;
+        symbol [ menuItem %tmp.40 125 27 35 ];
+        symbol [ getId %tmp.41 125 36 41 ];
+        %tmp.41 = getv function %tmp.40 :getId;
+        %tmp.42 = invoke %tmp.40 %tmp.41();
+        %tmp.43 = as %tmp.42 Number;
+        symbol [ Number %tmp.43 125 47 53 ];
+        lputv %color_id.3 %tmp.43;
+        symbol [ color_id %color_id.3 125 16 24 ];
 [ "/home/max/git/simplex-garmin-watchface/source/ColorSettings.mc" 127 12 ]
-        %tmp.49 = getv ? :Application;
-        %tmp.50 = getv %tmp.49 :Properties;
-        %tmp.51 = getv function %tmp.50 :setValue;
-        %tmp.53 = getv ? :color_settings_menu;
-        %tmp.54 = getv function %tmp.53 :getSettingsName;
-        %tmp.55 = invoke %tmp.53 %tmp.54();
-        %tmp.57 = lgetv %color_id.3;
-        invoke %tmp.50 %tmp.51(%tmp.55, %tmp.57);
+        symbol [ Application %tmp.45 127 12 23 ];
+        %tmp.45 = getv ? :Application;
+        symbol [ Properties %tmp.46 127 24 34 ];
+        %tmp.46 = getv %tmp.45 :Properties;
+        symbol [ setValue %tmp.47 127 35 43 ];
+        %tmp.47 = getv function %tmp.46 :setValue;
+        symbol [ color_settings_menu %tmp.49 127 44 63 ];
+        %tmp.49 = getv ? :color_settings_menu;
+        symbol [ getSettingsName %tmp.50 127 64 79 ];
+        %tmp.50 = getv function %tmp.49 :getSettingsName;
+        %tmp.51 = invoke %tmp.49 %tmp.50();
+        %tmp.52 = lgetv %color_id.3;
+        symbol [ color_id %tmp.52 127 83 91 ];
+        invoke %tmp.46 %tmp.47(%tmp.51, %tmp.52);
 [ "/home/max/git/simplex-garmin-watchface/source/ColorSettings.mc" 129 12 ]
-_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_129_12_if_stmt:
-        %tmp.59 = getv ? :color_settings_menu;
-        %tmp.60 = getv function %tmp.59 :getMenuItemHandle;
-        %tmp.61 = invoke %tmp.59 %tmp.60();
-        %tmp.62 = null;
-        %tmp.63 = ne %tmp.61 %tmp.62;
-        bf %tmp.63 @_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_129_12_if_end;
-_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_129_12_if_true:
-_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_130_12_start:
+_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_129_12_138_12_if_stmt:
+        symbol [ color_settings_menu %tmp.54 129 15 34 ];
+        %tmp.54 = getv ? :color_settings_menu;
+        symbol [ getMenuItemHandle %tmp.55 129 35 52 ];
+        %tmp.55 = getv function %tmp.54 :getMenuItemHandle;
+        %tmp.56 = invoke %tmp.54 %tmp.55();
+        %tmp.57 = null;
+        %tmp.58 = ne %tmp.56 %tmp.57;
+        bf %tmp.58 @_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_129_12_138_12_if_end;
+_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_129_12_138_12_if_true:
+_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_130_12_138_12_start:
 [ "/home/max/git/simplex-garmin-watchface/source/ColorSettings.mc" 131 16 ]
-        %tmp.65 = getv ? :color_settings_menu;
-        %tmp.66 = getv function %tmp.65 :getMenuItemHandle;
-        %tmp.67 = invoke %tmp.65 %tmp.66();
-        %tmp.68 = getv function %tmp.67 :setSubLabel;
-        %tmp.69 = self;
-        %tmp.70 = getv function %tmp.69 :colorName;
-        %tmp.72 = lgetv %color_id.3;
-        %tmp.73 = invoke %tmp.69 %tmp.70(%tmp.72);
-        invoke %tmp.67 %tmp.68(%tmp.73);
+        symbol [ color_settings_menu %tmp.60 131 16 35 ];
+        %tmp.60 = getv ? :color_settings_menu;
+        symbol [ getMenuItemHandle %tmp.61 131 36 53 ];
+        %tmp.61 = getv function %tmp.60 :getMenuItemHandle;
+        %tmp.62 = invoke %tmp.60 %tmp.61();
+        symbol [ setSubLabel %tmp.63 131 56 67 ];
+        %tmp.63 = getv function %tmp.62 :setSubLabel;
+        %tmp.64 = self;
+        symbol [ colorName %tmp.65 131 68 77 ];
+        %tmp.65 = getv function %tmp.64 :colorName;
+        %tmp.66 = lgetv %color_id.3;
+        symbol [ color_id %tmp.66 131 78 86 ];
+        %tmp.67 = invoke %tmp.64 %tmp.65(%tmp.66);
+        invoke %tmp.62 %tmp.63(%tmp.67);
 [ "/home/max/git/simplex-garmin-watchface/source/ColorSettings.mc" 133 16 ]
-        %tmp.75 = getv ? :color_settings_menu;
-        %tmp.76 = getv function %tmp.75 :getMenuItemHandle;
-        %tmp.77 = invoke %tmp.75 %tmp.76();
-        %tmp.78 = getv function %tmp.77 :setIcon;
-        %tmp.79 = self;
-        %tmp.80 = getv function %tmp.79 :generateColorIcon;
-        %tmp.82 = lgetv %color_id.3;
-        %tmp.83 = invoke %tmp.79 %tmp.80(%tmp.82);
-        invoke %tmp.77 %tmp.78(%tmp.83);
+        symbol [ color_settings_menu %tmp.69 133 16 35 ];
+        %tmp.69 = getv ? :color_settings_menu;
+        symbol [ getMenuItemHandle %tmp.70 133 36 53 ];
+        %tmp.70 = getv function %tmp.69 :getMenuItemHandle;
+        %tmp.71 = invoke %tmp.69 %tmp.70();
+        symbol [ setIcon %tmp.72 133 56 63 ];
+        %tmp.72 = getv function %tmp.71 :setIcon;
+        %tmp.73 = self;
+        symbol [ generateColorIcon %tmp.74 133 64 81 ];
+        %tmp.74 = getv function %tmp.73 :generateColorIcon;
+        %tmp.75 = lgetv %color_id.3;
+        symbol [ color_id %tmp.75 133 82 90 ];
+        %tmp.76 = invoke %tmp.73 %tmp.74(%tmp.75);
+        invoke %tmp.71 %tmp.72(%tmp.76);
 [ "/home/max/git/simplex-garmin-watchface/source/ColorSettings.mc" 135 16 ]
-        %tmp.84 = getm $.Toybox.WatchUi;
-        %tmp.85 = getv function %tmp.84 :popView;
-        %tmp.86 = getm $.Toybox.WatchUi;
-        %tmp.87 = getv %tmp.86 :SLIDE_RIGHT;
-        invoke %tmp.84 %tmp.85(%tmp.87);
+        symbol [ WatchUi %tmp.77 135 16 23 ];
+        %tmp.77 = getm $.Toybox.WatchUi;
+        symbol [ popView %tmp.78 135 24 31 ];
+        %tmp.78 = getv function %tmp.77 :popView;
+        symbol [ WatchUi %tmp.79 135 32 39 ];
+        %tmp.79 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_RIGHT %tmp.80 135 40 51 ];
+        %tmp.80 = getv %tmp.79 :SLIDE_RIGHT;
+        invoke %tmp.77 %tmp.78(%tmp.80);
 [ "/home/max/git/simplex-garmin-watchface/source/ColorSettings.mc" 137 16 ]
-        %tmp.88 = getm $.Toybox.WatchUi;
-        %tmp.89 = getv function %tmp.88 :requestUpdate;
-        invoke %tmp.88 %tmp.89();
-_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_130_12_stop:
-        goto @_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_129_12_if_end;
-_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_129_12_if_end:
-_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_124_8_stop:
-_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_104_8_if_end:
-_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_102_4_stop:
+        symbol [ WatchUi %tmp.81 137 16 23 ];
+        %tmp.81 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.82 137 24 37 ];
+        %tmp.82 = getv function %tmp.81 :requestUpdate;
+        invoke %tmp.81 %tmp.82();
+_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_130_12_138_12_stop:
+        goto @_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_129_12_138_12_if_end;
+_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_129_12_138_12_if_end:
+_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_124_8_141_8_stop:
+_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_104_8_141_8_if_end:
+_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_102_4_144_4_stop:
     }
-    [ @file = "/home/max/git/simplex-garmin-watchface/source/ColorSettings.mc"; @line = 146; ]
+    [ @file = "/home/max/git/simplex-garmin-watchface/source/ColorSettings.mc"; @line = 146; @symbol_functiondef = [setMenu,146,20,27]; @symbol_param<0> = [menu,146,28,32]; ]
     public
     function setMenu(menu) {
-_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_147_4_start:
+_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_147_4_149_4_start:
 [ "/home/max/git/simplex-garmin-watchface/source/ColorSettings.mc" 148 8 ]
-        %tmp.2 = lgetv %menu;
-        putv self :color_settings_menu %tmp.2;
-_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_147_4_stop:
+        %tmp.1 = lgetv %menu;
+        symbol [ menu %tmp.1 148 30 34 ];
+        symbol [ color_settings_menu ? 148 8 27 ];
+        putv self :color_settings_menu %tmp.1;
+_home_max_git_simplex_garmin_watchface_source_ColorSettings_mc_147_4_149_4_stop:
     }
 }
 [ @file = "/home/max/git/simplex-garmin-watchface/source/ColorSettings.mc"; @line = 1; ]

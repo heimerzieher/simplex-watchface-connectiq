@@ -159,6 +159,11 @@ class SimplexSettingsMenuDelegate extends WatchUi.Menu2InputDelegate
             menuItem.setSubLabel(new_value.toString());
         }
 
+        // else if((menuItem.getId() as String).equals("ResetSettings"))
+        // {
+            
+        // }
+
         else
         {
             // var color_picker;

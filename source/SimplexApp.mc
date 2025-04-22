@@ -24,11 +24,11 @@ class SimplexApp extends Application.AppBase
     }
 
     // Return the initial view of your application here
-    function getInitialView() as Array<Views or InputDelegates>? 
+    function getInitialView() as [Views] or [Views, InputDelegates]
     {
         app_view = new SimplexView();
 
-        return [ app_view, new $.SimplexDelegate(app_view) ] as Array<Views or InputDelegates>;
+        return [app_view, new $.SimplexDelegate(app_view)];
     }
 
     // New app settings have been received so trigger a UI update
@@ -39,7 +39,7 @@ class SimplexApp extends Application.AppBase
     }
 
     // Return the settings view and delegate
-    public function getSettingsView() as Array<Views or InputDelegates>? 
+    public function getSettingsView() as [Views] or [Views, InputDelegates] or Null 
     {
         var version = Lang.format("$1$$2$$3$",System.getDeviceSettings().monkeyVersion).toNumber();
 
@@ -191,6 +191,10 @@ class SimplexApp extends Application.AppBase
         }
 
 
+        // menu.addItem(new WatchUi.MenuItem("Reset Settings", "Reset to Default", "ResetSettings", null));
+
+
+
         //these two are for debugging only
         // val = Application.Properties.getValue("AllowedExTime").format( "%3f" );
         // menu.addItem(new WatchUi.MenuItem("Allowed Ex Time", val ,"null", null));
@@ -198,7 +202,7 @@ class SimplexApp extends Application.AppBase
         // val = Application.Properties.getValue("NeededExTime").format( "%3f" );
         // menu.addItem(new WatchUi.MenuItem("Needed Ex Time", val, "null", null));
 
-        return [menu, new $.SimplexSettingsMenuDelegate()] as Array<Views or InputDelegates>;
+        return [menu, new $.SimplexSettingsMenuDelegate()];
     }
 
 }
