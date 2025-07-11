@@ -6,7 +6,6 @@ import Toybox.WatchUi;
 
 class SimplexView extends WatchUi.WatchFace 
 {
-
     private var draw_secondshand_bool;
     private var draw_minuteticks_bool;
     private var draw_hourticks_bool;
@@ -25,7 +24,6 @@ class SimplexView extends WatchUi.WatchFace
     private var seconds_hand_color;
 
     private var is_in_sleepmode;
-
 
     private var offscreen_buffer as BufferedBitmap?;
 
@@ -362,7 +360,6 @@ class SimplexView extends WatchUi.WatchFace
         
         var target_x = length*Math.cos(degree);
         var target_y = length*Math.sin(degree);
-
     
         dc.setPenWidth(1);
 
@@ -370,9 +367,7 @@ class SimplexView extends WatchUi.WatchFace
 
         var tail_deg = 0.04 * width;
 
-
         var tip = length/8.0;
-
 
         thinning = (thinning/4.0f) + 1;
 
@@ -433,7 +428,6 @@ class SimplexView extends WatchUi.WatchFace
 
     function drawTicks(dc, center_x, center_y, screen_width, screen_height, length_long, length_short) 
     {
-
         var offset = screen_width/2.0f - 5;
 
         var ratio = screen_width/200.0f;
@@ -502,7 +496,6 @@ class SimplexView extends WatchUi.WatchFace
     //draws the numbers for each hour
     function drawNumbers(dc, center_x, center_y, screen_width, screen_height, draw_date) 
     {
-
         //dc.setPenWidth(2);
 
         dc.setColor(foreground_color, background_color);

@@ -3,7 +3,7 @@ import Toybox.Application;
 import Toybox.WatchUi;
 
 
-var colors =  [ 0x000000,
+var colors =   [0x000000,
                 0x555555,
                 0xAAAAAA,
                 0xFFFFFF,
@@ -48,7 +48,6 @@ function colorName(code)
     }
 
     return color_names[colorIndex(code)];
-
 }
 
 function colorIndex(code)
@@ -81,7 +80,7 @@ function generateColorIcon(code)
     var text_icon = new WatchUi.Text({
         :text=>"III",
         :color=>code
-        }); 
+        });
 
     return text_icon;
 }

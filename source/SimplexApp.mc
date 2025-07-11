@@ -51,7 +51,6 @@ class SimplexApp extends Application.AppBase
         // for testing
         // menu.addItem(new WatchUi.MenuItem("TEST", null, "TEST", null));
 
-
         var val = Application.Properties.getValue("DrawDate") ? true : false;
         menu.addItem(new WatchUi.ToggleMenuItem("Draw Date", null, "DrawDate", val, null));
 
@@ -78,7 +77,7 @@ class SimplexApp extends Application.AppBase
         // menu.addItem(new WatchUi.ToggleMenuItem("Mode", {:enabled=>"Mode: Custom", :disabled=>"Mode: Theme"}, "Mode", val, null));
 
         val = Application.Properties.getValue("Mode") ? true : false;
-        menu.addItem(new WatchUi.MenuItem("Mode", val ? "Custom Colors" : "Theme Colors", "Mode",null));
+        menu.addItem(new WatchUi.MenuItem("Mode", val ? "Custom Colors" : "Theme Colors", "Mode", null));
 
         // val = Application.Properties.getValue("Theme") ? true : false;
         // menu.addItem(new WatchUi.ToggleMenuItem("Theme", {:enabled=>"Theme: Dark", :disabled=>"Theme: Light"}, "Theme", val, null));
@@ -89,7 +88,6 @@ class SimplexApp extends Application.AppBase
         val = Application.Properties.getValue("Theme") ? true : false;
         menu.addItem(new WatchUi.MenuItem("Theme", val ? "Dark Theme" : "Light Theme", "Theme", null));
         // }
-
 
         //watches at 4.2.0 and below do not have enough memory to display these settings
         if(version > 420)
@@ -190,10 +188,7 @@ class SimplexApp extends Application.AppBase
             // menu.addItem(new WatchUi.MenuItem("Hour Hand Thinning", val.toString(), "HourHandThinning", null));            
         }
 
-
         // menu.addItem(new WatchUi.MenuItem("Reset Settings", "Reset to Default", "ResetSettings", null));
-
-
 
         //these two are for debugging only
         // val = Application.Properties.getValue("AllowedExTime").format( "%3f" );
@@ -204,7 +199,6 @@ class SimplexApp extends Application.AppBase
 
         return [menu, new $.SimplexSettingsMenuDelegate()];
     }
-
 }
 
 function getApp() as SimplexApp 

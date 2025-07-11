@@ -7,8 +7,8 @@
     -->
     <!-- this is the beta id -->
     <!-- <iq:application id="2fff400f-3b31-43e6-99dc-08f28c379bd1" type="watchface" name="@Strings.AppName" entry="SimplexApp" launcherIcon="@Drawables.LauncherIcon" minApiLevel="3.0.0"> -->
-        <!-- this is the published id -->
-        <iq:application id="3241c7b7-ce6f-4b79-8f38-897a8dfe7e7f" type="watchface" name="@Strings.AppName" entry="SimplexApp" launcherIcon="@Drawables.LauncherIcon" minApiLevel="3.0.0">
+    <!-- this is the published id -->
+    <iq:application id="3241c7b7-ce6f-4b79-8f38-897a8dfe7e7f" type="watchface" name="@Strings.AppName" entry="SimplexApp" launcherIcon="@Drawables.LauncherIcon" minApiLevel="3.0.0">
         <!--
             Use the following from the Visual Studio Code comand palette to edit
             the build targets:
@@ -71,6 +71,8 @@
             <iq:product id="fr255sm"/>
             <iq:product id="fr265"/>
             <iq:product id="fr265s"/>
+            <iq:product id="fr57042mm"/>
+            <iq:product id="fr57047mm"/>
             <iq:product id="fr645"/>
             <iq:product id="fr645m"/>
             <iq:product id="fr745"/>
@@ -79,6 +81,7 @@
             <iq:product id="fr945lte"/>
             <iq:product id="fr955"/>
             <iq:product id="fr965"/>
+            <iq:product id="fr970"/>
             <iq:product id="instinct3amoled45mm"/>
             <iq:product id="instinct3amoled50mm"/>
             <iq:product id="legacyherocaptainmarvel"/>
@@ -104,6 +107,7 @@
             <iq:product id="venud"/>
             <iq:product id="venusq2"/>
             <iq:product id="venusq2m"/>
+            <iq:product id="venux1"/>
             <iq:product id="vivoactive3"/>
             <iq:product id="vivoactive3d"/>
             <iq:product id="vivoactive3m"/>

@@ -11,7 +11,6 @@ class ColorPickerView extends WatchUi.View
 
     private var color_menu_item_handle;
 
-
     function initialize() 
     {
         View.initialize();
